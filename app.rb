@@ -12,7 +12,12 @@ end
 
 get '/pregunta' do
     @categoria= params[:categoria]
-    @pregunta= "Cuanto es 2+2?"
+    @categorias = ["Matematica"]
+    @preguntas={"Matematica" => [
+        ["Cuanto es 2+2?", "3", "4", "6", "4"],
+        ["Cuanto es 3*2", "3", "4", "6", "6"]
+        ]   
+    }
     erb :pregunta
 end
 
