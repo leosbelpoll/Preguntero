@@ -11,6 +11,7 @@ get '/categoria' do
 end
 
 get '/pregunta' do
+    @categoria= params[:categoria]
     @pregunta= "Cuanto es 2+2?"
     erb :pregunta
 end
