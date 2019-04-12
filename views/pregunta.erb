@@ -14,19 +14,25 @@
           <legend>Categoria</legend>
           <input checked type="radio" id="c1" name="categoria" value="Matematicas">
           <label class=“form-check-label” for="c1">Matematicas</label>
-          <input disabled type="Radio" id="c2" name="categoria" value="Deportes">
-          <label for="c1">Deportes</label>
+          <!-- <input disabled type="Radio" id="c2" name="categoria" value="Deportes">
+          <label for="c1">Deportes</label> -->
         </fieldset>
         
     <fieldset>
       <legend class="pregunta"><%=@pregunta%></legend>
-      <input type="text" name="pregunta" value="<%=@pregunta%>" id="pregunta">
-      <input class=“form-check-input” type="radio" id="r1" name="respuesta" value="r1">
-      <label class=“form-check-label” for="r1">5</label>
-      <input class=“form-check-input” type="radio" id="r2" name="respuesta" value="r2">
-      <label class=“form-check-label” for="r2">4</label>
-      <input class=“form-check-input” type="radio" id="r3" name="respuesta" value="r3">
-      <label class=“form-check-label” for="r3">2</label>
+      <input type="hidden" name="pregunta" value="<%=@pregunta%>" id="pregunta">
+      <div>
+        <input class=“form-check-input” type="radio" id="r1" name="respuesta" value="r1">
+        <label class=“form-check-label” for="r1">5</label>
+      </div>
+      <div>
+        <input class=“form-check-input” type="radio" id="r2" name="respuesta" value="r2">
+        <label class=“form-check-label” for="r2">4</label>
+      </div>
+      <div>
+        <input class=“form-check-input” type="radio" id="r3" name="respuesta" value="r3">
+        <label class=“form-check-label” for="r3">2</label>
+      </div>
     </fieldset>
     <input class="btn btn-primary" type="submit" value="Responder" id="submit">
   </form>

@@ -40,6 +40,6 @@
     click_button("submit")
   end
   
-#   Then(/^La pagina resultado contiene "([^"]*)"$/) do |arg1|
-#     expect(find("label[for='r2']").text).to eq respuesta 
+#   Then(/^La pagina resultado contiene "([^"]*)"$/) do |resultado|
+#     expect(find("h1").text).to eq resultado 
 #   end

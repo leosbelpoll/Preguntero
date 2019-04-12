@@ -13,3 +13,8 @@ get '/pregunta' do
     @pregunta= "Cuanto es 2+2?"
     erb :pregunta
 end
+
+post '/pregunta' do
+    @resultado= "OK"
+    erb :resultado
+end
