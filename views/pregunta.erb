@@ -19,6 +19,7 @@
       <input type="hidden" name="pregunta" value="<%=@pregunta_mostrar%>" id="pregunta" />
       <p class="opciones">Opciones:</p>
       <%@pregunta["opciones"].each do |key, value| %>
+
         <div>
             <input class=“form-check-input” type="radio" id="<%=key%>" name="respuesta" value="<%=key%>" />
             <label class=“form-check-label” for="r1"><%=value%></label>
