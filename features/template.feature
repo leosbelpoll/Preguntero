@@ -25,11 +25,11 @@ Scenario: Navego a pregunta
 
 Scenario: Mostrar pregunta
     Given Pagina de pregunta
-    Then Que contenga la pregunta "Cuanto es 2+2?"
+    Then Que contenga delante de la pregunta "Pregunta:"
 
 Scenario: Mostrar opciones
     Given Pagina de pregunta
-    Then Que contenga la opcion "4"
+    Then Que contenga delante de las opciones "Opciones:"
 
 # Scenario: Validar respuesta
 #     Given Pagina de pregunta
