@@ -17,16 +17,17 @@
           <label for="c1">Deportes</label>
         </fieldset>
         
-    <fieldset class="form-check">
+    <fieldset>
       <legend class="pregunta"><%=@pregunta%></legend>
+      <input type="text" name="pregunta" value="<%=@pregunta%>" id="pregunta">
       <input class=“form-check-input” type="radio" id="r1" name="respuesta" value="r1">
       <label class=“form-check-label” for="r1">5</label>
       <input class=“form-check-input” type="radio" id="r2" name="respuesta" value="r2">
-      <label class=“form-check-label” for="r1">4</label>
+      <label class=“form-check-label” for="r2">4</label>
       <input class=“form-check-input” type="radio" id="r3" name="respuesta" value="r3">
-      <label class=“form-check-label” for="r1">2</label>
+      <label class=“form-check-label” for="r3">2</label>
     </fieldset>
-    <input class="btn btn-primary" type="submit" value="Responder">
+    <input class="btn btn-primary" type="submit" value="Responder" id="submit">
   </form>
 </body>
 </html>
