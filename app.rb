@@ -22,6 +22,6 @@ get '/pregunta' do
 end
 
 post '/pregunta' do
-    @resultado= "OK"
+    @resultado= params[:resultado]
     erb :resultado
 end
