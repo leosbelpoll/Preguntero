@@ -7,5 +7,9 @@
   end
 
   Then(/^Que contenga el boton "([^"]*)"$/) do |texto|
-    expect(find("a.btn").text).to eq texto 
+    expect(find("#iniciar").value).to eq texto 
+  end
+
+  When(/^Presiono boton "([^"]*)"$/) do |boton|
+    click_button(boton)
   end
