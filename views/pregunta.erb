@@ -18,6 +18,7 @@
     <fieldset>
       <legend class="pregunta"><span class="pregunta">Pregunta:</span> <%=@preguntas[@categoria]["p1"]["text"]%></legend>
       <input type="hidden" name="pregunta" value="<%=@pregunta%>" id="pregunta">
+      <p class="opciones">Opciones:</p>
       <%@preguntas[@categoria]["p1"]["opciones"].each do |key, value| %>
         <div>
             <input class=“form-check-input” type="radio" id="<%=key%>" name="respuesta" value="<%=value%>">
