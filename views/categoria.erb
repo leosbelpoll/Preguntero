@@ -9,8 +9,8 @@
 <body class="container">
     <h1>Categorias</h1>
     <form method="GET" action="/pregunta">
-    <% @categorias.each do |categoria| %>
-      <input class="btn btn-primary" id=<%=categoria.downcase%> name="categoria" type="submit" value=<%=categoria%> />
+    <% @categorias.each_with_index do |categoria, idx| %>
+      <input class="btn btn-secondary" style="background-color: hsl(<%=(30*idx)%>, 60%, 60%)" id=<%=categoria.downcase%> name="categoria" type="submit" value=<%=categoria%> />
     <%end%>
  </form>
 </body>
