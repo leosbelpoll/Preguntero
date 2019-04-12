@@ -8,6 +8,9 @@
       <title>Hello world</title>
   </head>
 <body class="container">
-  <h1><%=@resultado%></h1>
+  <h1>Resultado</h1>
+  <div class="alert <%= @resultado == 'OK' ? 'alert-success' : 'alert-danger' %>">
+    <h2><%=@resultado%></h2>
+  </div>
 </body>
 </html>

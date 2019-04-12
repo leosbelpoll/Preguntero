@@ -17,7 +17,7 @@
           <!-- <input disabled type="Radio" id="c2" name="categoria" value="Deportes">
           <label for="c1">Deportes</label> -->
         </fieldset>
-        
+
     <fieldset>
       <legend class="pregunta"><span class="pregunta">Pregunta:</span> <%=@preguntas[@categoria]["p1"]["text"]%></legend>
       <input type="hidden" name="pregunta" value="<%=@pregunta%>" id="pregunta">
@@ -28,6 +28,7 @@
             <label class=“form-check-label” for="r1"><%=value%></label>
           </div>
       <%end%>
+
     </fieldset>
     <input class="btn btn-primary" type="submit" value="Responder" id="submit">
   </form>
