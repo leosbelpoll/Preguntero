@@ -10,23 +10,23 @@
 <body class="container">
   <h1>Pregunta</h1>
   <form method="post">
-      <fieldset>
-          <legend>Categoria <%=@categoria%></legend>
-        </fieldset>
+    <fieldset>
+      <legend>Categoria <%=@categoria%></legend>
+    </fieldset>
         
     <fieldset>
       <legend class="pregunta"><%=@pregunta%></legend>
       <input type="hidden" name="pregunta" value="<%=@pregunta%>" id="pregunta">
       <div>
-        <input class=“form-check-input” type="radio" id="r1" name="respuesta" value="r1">
+        <input class=“form-check-input” type="radio" id="r1" name="respuesta" value="r1" required>
         <label class=“form-check-label” for="r1">5</label>
       </div>
       <div>
-        <input class=“form-check-input” type="radio" id="r2" name="respuesta" value="r2">
+        <input class=“form-check-input” type="radio" id="r2" name="respuesta" value="r2" required>
         <label class=“form-check-label” for="r2">4</label>
       </div>
       <div>
-        <input class=“form-check-input” type="radio" id="r3" name="respuesta" value="r3">
+        <input class=“form-check-input” type="radio" id="r3" name="respuesta" value="r3" required>
         <label class=“form-check-label” for="r3">2</label>
       </div>
     </fieldset>
