@@ -9,7 +9,9 @@
 <body>
     <h1>Categorias</h1>
     <form method="GET" action="/pregunta">
-    <input class="btn btn-primary" id="matematica" name="categoria" type="submit" value="Matematica" />
+    <% @categorias.each do |categoria| %>
+      <input class="btn btn-primary" id=<%=categoria.downcase%> name="categoria" type="submit" value=<%=categoria%> />
+    <%end%>
  </form>
 </body>
 </html>

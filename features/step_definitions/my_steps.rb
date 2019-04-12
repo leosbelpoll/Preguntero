@@ -15,7 +15,7 @@
   end
 
   Then(/^Se ve categoria "([^"]*)"$/) do |categoria|
-    expect(find(:css, ".btn").value).to eq categoria
+    expect(page.find(".btn[value='#{categoria}']").value).to eq categoria
   end
 
   Given(/^Pagina de pregunta$/) do

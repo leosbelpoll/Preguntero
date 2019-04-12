@@ -6,6 +6,7 @@ get '/' do
 end
 
 get '/categoria' do
+    @categorias = ["Matematica" , "Ciencia" , "Futbol"]
     erb :categoria
 end
 

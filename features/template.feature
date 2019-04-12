@@ -13,7 +13,7 @@ Scenario: Navego a categoria
     When Presiono boton "iniciar"
     Then Que el titulo sea "Categorias"
 
-Scenario: Mostrar categoria
+Scenario: Mostrar categorias
     Given Inicio de la aplicacion
     When Presiono boton "iniciar"
     Then Se ve categoria "Matematica"
