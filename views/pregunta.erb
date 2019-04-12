@@ -10,13 +10,10 @@
 <body class="container">
   <h1>Pregunta</h1>
   <form method="post">
-      <fieldset>
-          <legend>Categoria <%=@categoria%></legend>
-          <input checked type="radio" id="c1" name="categoria" value="Matematicas">
-          <label class=“form-check-label” for="c1"><%=@categoria%></label>
-          <!-- <input disabled type="Radio" id="c2" name="categoria" value="Deportes">
-          <label for="c1">Deportes</label> -->
-        </fieldset>
+
+      <h2>
+       Categoria <%=@categoria%>
+        </h2>
 
     <fieldset>
       <legend class="pregunta"><span class="pregunta">Pregunta:</span> <%=@preguntas[@categoria]["p1"]["text"]%></legend>
