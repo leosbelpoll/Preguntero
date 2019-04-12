@@ -34,9 +34,9 @@
     expect(find("p.opciones").text).to eq texto 
   end
 
-#   Given(/^Envio de pregunta "([^"]*)" y opcion "([^"]*)"$/) do |pregunta, opcion|
+#   Given(/^Envio de pregunta "([^"]*)" y opcion "([^"]*)"$/) do |pregunta, respuesta|
 #     fill_in("pregunta", with: pregunta)
-#     choose "r2"
+#     choose respuesta
 #     click_button("submit")
 #   end
   

@@ -23,15 +23,17 @@ Scenario: Navego a pregunta
     When Presiono boton "matematica"
     Then Que el titulo sea "Pregunta"
 
-Scenario: Mostrar pregunta
-    Given Pagina de pregunta
-    Then Que contenga delante de la pregunta "Pregunta:"
+# Scenario: Mostrar pregunta
+#     Given Inicio de la aplicacion
+#     And Pagina de categoria
+#     And Pagina de pregunta
+#     Then Que contenga delante de la pregunta "Pregunta:"
 
-Scenario: Mostrar opciones
-    Given Pagina de pregunta
-    Then Que contenga delante de las opciones "Opciones:"
+# Scenario: Mostrar opciones
+#     Given Pagina de pregunta
+#     Then Que contenga delante de las opciones "Opciones:"
 
 # Scenario: Validar respuesta
 #     Given Pagina de pregunta
-#     And Envio de pregunta "Cuanto es 2+2?" y opcion "4"
+#     And Envio de pregunta "p1" y opcion "op2"
 #     Then La pagina resultado contiene "OK"

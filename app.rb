@@ -1,20 +1,8 @@
 require 'sinatra'
 require './config'
 
-get '/' do
-    @@categorias = ["Matematica" , "Ciencia" , "Futbol"]
-    erb :index
-end
 
-get '/categoria' do
-    @categorias = @@categorias
-    erb :categoria
-end
-
-get '/pregunta' do
-    @categoria= params[:categoria]
-    @categorias = @@categorias
-    @preguntas = {
+@@preguntas = {
         "Matematica" => {
             "p1" => {
                 "text" => "Cuanto es 2+2?",
@@ -67,10 +55,32 @@ get '/pregunta' do
             }
         }
     }
+
+get '/' do
+    erb :index
+end
+
+get '/categoria' do
+    @categorias = ["Matematica" , "Ciencia" , "Futbol"]
+    erb :categoria
+end
+
+get '/pregunta' do
+    @categoria= params[:categoria]
+    @pregunta_mostrar = "p1"
+    @pregunta = @@preguntas[@categoria][@pregunta_mostrar]
+    
     erb :pregunta
 end
 
 post '/pregunta' do
-    @resultado= params[:resultado]
+    @categoria= params[:categoria]
+    @respuesta= params[:respuesta]
+    @pregunta= params[:pregunta]
+    @resultado= "MAL"
+    if(@@preguntas[@categoria][@pregunta]["correcta"] == @respuesta)
+        @resultado= "OK"
+    end
+
     erb :resultado
 end
