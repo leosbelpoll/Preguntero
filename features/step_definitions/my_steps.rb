@@ -1,7 +1,11 @@
-Given(/^Inicio de la aplicacion$/) do
+ Given(/^Inicio de la aplicacion$/) do
     visit '/'
-end
+  end
+  
+  Then(/^Que el titulo sea "([^"]*)"$/) do |titulo|
+    expect(find("h1").text).to eq titulo 
+  end
 
-Then(/^Codigo de respuesta (\d+)$/) do |code|
-    expect(page.status_code).to eq code.to_i
-end
+  Then(/^Que contenga el boton "([^"]*)"$/) do |texto|
+    expect(find("a.btn").text).to eq texto 
+  end
