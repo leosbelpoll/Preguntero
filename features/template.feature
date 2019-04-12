@@ -6,12 +6,22 @@ Scenario: Titulo de inicio
 
 Scenario: Boton de inicio
     Given Inicio de la aplicacion
-    Then Que contenga el boton "iniciar" y texto "Iniciar partida"
+    Then Que contenga el boton "Iniciar partida"
 
 Scenario: Navego a categoria
     Given Inicio de la aplicacion
     When Presiono boton "iniciar"
     Then Que el titulo sea "Categorias"
+
+Scenario: Mostrar categoria
+    Given Inicio de la aplicacion
+    When Presiono boton "iniciar"
+    Then Se ve categoria "Futbol"
+
+Scenario: Navego a pregunta
+    Given Pagina de categoria
+    When Presiono boton "futbol"
+    Then Que el titulo sea "Pregunta"
 
 Scenario: Mostrar pregunta
     Given Pagina de pregunta
