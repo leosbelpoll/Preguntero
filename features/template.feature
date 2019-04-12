@@ -16,11 +16,11 @@ Scenario: Navego a categoria
 Scenario: Mostrar categoria
     Given Inicio de la aplicacion
     When Presiono boton "iniciar"
-    Then Se ve categoria "Futbol"
+    Then Se ve categoria "Matematica"
 
 Scenario: Navego a pregunta
     Given Pagina de categoria
-    When Presiono boton "futbol"
+    When Presiono boton "matematica"
     Then Que el titulo sea "Pregunta"
 
 Scenario: Mostrar pregunta
