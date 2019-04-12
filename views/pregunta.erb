@@ -7,7 +7,26 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <title>Hello world</title>
   </head>
-<body>
-  <label class="pregunta"><%=@pregunta%></label>
+<body class="container">
+  <form method="post">
+      <fieldset>
+          <legend>Categoria</legend>
+          <input checked type="radio" id="c1" name="categoria" value="Matematicas">
+          <label class=“form-check-label” for="c1">Matematicas</label>
+          <input disabled type="Radio" id="c2" name="categoria" value="Deportes">
+          <label for="c1">Deportes</label>
+        </fieldset>
+        
+    <fieldset class="form-check">
+      <legend class="pregunta"><%=@pregunta%></legend>
+      <input class=“form-check-input” type="radio" id="r1" name="respuesta" value="r1">
+      <label class=“form-check-label” for="r1">5</label>
+      <input class=“form-check-input” type="radio" id="r2" name="respuesta" value="r2">
+      <label class=“form-check-label” for="r1">4</label>
+      <input class=“form-check-input” type="radio" id="r3" name="respuesta" value="r3">
+      <label class=“form-check-label” for="r1">2</label>
+    </fieldset>
+    <input class="btn btn-primary" type="submit" value="Responder">
+  </form>
 </body>
 </html>

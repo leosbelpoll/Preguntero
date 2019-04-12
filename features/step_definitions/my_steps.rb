@@ -20,5 +20,5 @@
   end
 
   Then(/^Que contenga la pregunta "([^"]*)"$/) do |pregunta|
-    expect(find("label.pregunta").text).to eq pregunta 
+    expect(find("legend.pregunta").text).to eq pregunta 
   end
